@@ -4,9 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ComponentsModule } from '../components/components.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HomeComponent, NosotrosComponent, ContactoComponent],
-  imports: [CommonModule, ComponentsModule],
+  imports: [CommonModule, ComponentsModule, RouterModule],
 })
 export class PagesModule {}
