@@ -19,6 +19,10 @@ const routes: Routes = [
         path: 'mision',
         component: MisionComponent,
       },
+      {
+        path: '**',
+        redirectTo: 'vision',
+      },
     ],
   },
   {
