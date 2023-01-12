@@ -1,1 +1,29 @@
-<p>nosotros works!</p>
+<div>
+  <h2>Sobre Nosotros</h2>
+  <p class="fs-5">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
+    similique alias perspiciatis repellat hic harum magnam sapiente provident,
+    vitae voluptatum, quasi, fugiat accusantium officiis molestiae ut est quis
+    exercitationem impedit?
+  </p>
+  <div class="mt-4 d-flex gap-4">
+    <button
+      class="btn btn-primary"
+      [routerLink]="['vision']"
+      routerLinkActive="router-link-active"
+    >
+      Vision
+    </button>
+    <button
+      class="btn btn-primary"
+      [routerLink]="['mision']"
+      routerLinkActive="router-link-active"
+    >
+      Mision
+    </button>
+  </div>
+
+  <div style="background-color: rgb(127, 136, 255)" class="p-5 rounded mt-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
